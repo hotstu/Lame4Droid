@@ -64,15 +64,15 @@ public class MediaRecorderButton extends androidx.appcompat.widget.AppCompatButt
 
 
     private void startRecord() {
-        LameMp3Manager.instance.startRecorder(getBasePath() + File.separator + "lame.mp3");
+        LameMp3Manager.INSTANCE.startRecorder(getBasePath() + File.separator + "lame.mp3");
     }
 
     private void endRecorder() {
-        LameMp3Manager.instance.stopRecorder();
+        LameMp3Manager.INSTANCE.stopRecorder();
     }
 
     private void cancelRecord() {
-        LameMp3Manager.instance.cancelRecorder();
+        LameMp3Manager.INSTANCE.cancelRecorder();
     }
 
     @Override

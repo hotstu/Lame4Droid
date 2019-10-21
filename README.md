@@ -26,3 +26,6 @@ Android自带的录音功能只能输出amr格式，网上有很多库转mp3的�
 2. 采用生产者/消费者 + 装饰器设计模式重构代码，思路清晰
 
 3. 上传jcenter库，直接引用，不需要多余配置
+
+
+implementation 'github.hotstu.lame4droid:encoder:1.0.0'

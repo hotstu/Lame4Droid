@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         btRecorder = findViewById(R.id.bt_media_recorder);
-        LameMp3Manager.instance.setRecorderListener(new RecorderListener() {
+        LameMp3Manager.INSTANCE.setRecorderListener(new RecorderListener() {
             @Override
             public void onVolume(int volume) {
 

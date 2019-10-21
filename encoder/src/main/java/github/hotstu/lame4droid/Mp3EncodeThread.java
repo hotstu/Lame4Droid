@@ -110,7 +110,7 @@ public class Mp3EncodeThread extends Thread {
     private int processData(ChangeBuffer data) {
         short[] buffer = data.getData();
         int readSize = data.getReadSize();
-        Log.d(TAG, "Read size: " + readSize);
+        //Log.d(TAG, "Read size: " + readSize);
         if (readSize > 0) {
             try {
                 bufferedOutputStream.write(buffer, readSize);
@@ -163,7 +163,6 @@ public class Mp3EncodeThread extends Thread {
                 this.rawData = null;
             } else {
                 short[] shorts = new short[rawData.length];
-                //数组拷贝哪家强 山东蓝翔找System.arraycopy
                 System.arraycopy(rawData, 0, shorts, 0, rawData.length);
                 this.rawData = shorts;
             }
